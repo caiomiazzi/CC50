@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Parte 1: Múltipla Escolha
+                const multipleChoiceButtons = document.querySelectorAll(".multiple-choice button");
+                const feedback1 = document.getElementById("feedback1");
+
+                multipleChoiceButtons.forEach(button => {
+                    button.addEventListener("click", () => {
+                        if (button.dataset.correct === "true") {
+                            button.style.backgroundColor = "green";
+                            feedback1.textContent = "Correto!";
+                            feedback1.style.color = "green";
+                        } else {
+                            button.style.backgroundColor = "red";
+                            feedback1.textContent = "Incorreto!";
+                            feedback1.style.color = "red";
+                        }
+                    });
+                });
+
+                // Parte 2: Resposta Livre
+                const freeResponseButton = document.getElementById("submit-answer");
+                const freeResponseInput = document.getElementById("free-response");
+                const feedback2 = document.getElementById("feedback2");
+                const correctAnswer = "JavaScript"; // Resposta correta
+
+                freeResponseButton.addEventListener("click", () => {
+                    if (freeResponseInput.value.trim().toLowerCase() === correctAnswer.toLowerCase()) {
+                        freeResponseInput.style.backgroundColor = "green";
+                        feedback2.textContent = "Correto!";
+                        feedback2.style.color = "green";
+                    } else {
+                        freeResponseInput.style.backgroundColor = "red";
+                        feedback2.textContent = "Incorreto!";
+                        feedback2.style.color = "red";
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice</h2>
+                <hr>
+                <h3>Qual linguagem é a mais legal do mundo?</h3>
+                <div class="multiple-choice">
+                    <button data-correct="true">Python</button>
+                    <button data-correct="false">JavaScript</button>
+                    <button data-correct="false">C++</button>
+                </div>
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Digite o nome da linguagem usada para manipular o DOM em páginas web:</h3>
+                <input type="text" id="free-response" placeholder="Sua resposta">
+                <button id="submit-answer">Enviar Resposta</button>
+                <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>

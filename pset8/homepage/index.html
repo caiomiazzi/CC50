@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Webpage</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="bg-primary text-white text-center py-4">
+            <h1>Welcome to My Webpage</h1>
+            <p class="lead">Exploring HTML, CSS, Bootstrap, and JavaScript</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">My Page</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container my-5">
+            <section>
+                <h2>Introduction</h2>
+                <p>Welcome to my homepage! Here, you will find information about me, my hobbies, and other cool stuff.</p>
+                <p>Feel free to explore the links above to learn more!</p>
+            </section>
+            <section>
+                <h3>Special Feature</h3>
+                <button id="surpriseButton" class="btn btn-success">Click me for a surprise!</button>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2024 My Webpage. All rights reserved.</p>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!-- Custom JS -->
+        <script>
+            // JavaScript for interactivity
+            document.getElementById("surpriseButton").addEventListener("click", function() {
+                alert("Thanks for visiting my page!");
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+}
+
+/* Navegação */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Conteúdo Principal */
+main {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Botões */
+button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background: #343a40;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Específico */
+h1, h2, h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+p {
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}
