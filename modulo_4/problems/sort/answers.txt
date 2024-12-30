@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: O Sort 1 teve um desempenho muito melhor quando o arquivo já estava ordenado, o que é esperado para o Bubble Sort, pois nesse caso ele faz apenas uma passagem pelos elementos. Nos casos de arquivos desordenados ou reversos, o tempo cresceu rapidamente, o que é consistente com o comportamento O(n²) no pior caso.
+
+sort2 uses: Merge Sort
+
+How do you know?: O Sort 2 apresentou um crescimento constante no tempo de execução à medida que o tamanho do arquivo aumentava, independentemente da ordem inicial dos dados. Isso reflete o comportamento do Merge Sort, que tem complexidade O(n log n) tanto no melhor quanto no pior caso.
+
+sort3 uses: Selection Sort
+
+How do you know?:  O Sort 3 teve tempos semelhantes para arquivos ordenados, desordenados e reversos, indicando que ele realiza o mesmo número de comparações independentemente da ordem inicial dos dados. Esse comportamento é típico do Selection Sort, que possui complexidade O(n²) em todos os casos.
