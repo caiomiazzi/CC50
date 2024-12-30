@@ -1,0 +1,13 @@
+project/
+│
+├── app.py                   # Arquivo principal da aplicação Flask
+├── templates/
+│   ├── index.html           # Página inicial da aplicação
+│   └── result.html          # Página de resultados (exibe CPF gerado ou validado)
+├── static/
+│   ├── css/
+│   │   └── styles.css       # Arquivo de estilos CSS
+│   ├── js/
+│   │   └── script.js        # Arquivo JavaScript (se necessário)
+├── cpf.py                   # Módulo com funções de validação e criação de CPF
+└── README.md                # Documentação do projeto (opcional, mas recomendável)
